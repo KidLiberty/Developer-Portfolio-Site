@@ -30,9 +30,10 @@
 .projects-grid {
   display: grid;
   justify-content: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 80px;
+  gap: 75px;
   margin: 150px 50px;
 }
 
@@ -61,7 +62,7 @@
   align-items: center;
   height: 25%;
   color: white;
-  background: linear-gradient(to right, #1cd8d2, #93edc7);
+  background: linear-gradient(to right, #a366d5, #efb9f6);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
@@ -69,7 +70,7 @@
 @media (max-width: 1100px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 75px;
     margin: 200px 20px;
   }
 }
@@ -77,7 +78,7 @@
 @media (max-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 80px;
+    gap: 75px;
     margin: 200px 20px;
   }
 }
