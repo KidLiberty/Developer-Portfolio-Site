@@ -1,0 +1,25 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(244, 239, 245);
+  background-color: gray;
+}
+
+.footer-container a {
+  text-decoration: none;
+  padding-bottom: 25px;
+  color: rgb(244, 239, 245);
+}
+
+.footer-items-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 30px;
+}
+
+.footer-items-container div {
+  padding: 15px;
+}

@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 24px;
+  z-index: -1;
+}
+
+.icon {
+  display: inline;
+  color: red;
+  font-size: 20px;
+}

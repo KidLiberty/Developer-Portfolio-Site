@@ -1,0 +1,17 @@
+@import 'Navbar.css';
+@import 'Main.css';
+@import 'Projects.css';
+@import 'Footer.css';
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  position: relative;
+}
