@@ -15,7 +15,12 @@ export default function Main() {
       <div className='main-header'>
         I am a Web Developer with a focus on React.js
       </div>
-      <div style={{ transform: `translateY(${offsetY * 0.5}px)` }}>Test</div>
+      <div
+        className='react-logo-container'
+        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+      >
+        <img src={require('../images/react-logo.png')} alt='React Logo' />
+      </div>
     </section>
   )
 }

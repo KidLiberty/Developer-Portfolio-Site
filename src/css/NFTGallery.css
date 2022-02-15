@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.nft-gallery-container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  background-color: black;
+}
+
+.title {
+  justify-content: flex-start;
+  align-items: center;
+  color: #777;
+  font-size: 1rem;
+  padding: 5px;
+  min-height: 10vh;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  width: 100vw;
+}
+
+.btn-1 {
+  width: 225px;
+  padding: 15px;
+  margin: 10px;
+  font-family: inherit;
+  font-size: 1.35rem;
+  border: none;
+  border-radius: 10000px;
+  background: linear-gradient(220deg, #72169c, #56f5f5, #4bf845);
+}
+
+.btn-2 {
+  width: 225px;
+  padding: 15px;
+  margin: 10px;
+  font-family: inherit;
+  font-size: 1.35rem;
+  border: 2px solid white;
+  border-radius: 10000px;
+  background-color: #10ff90;
+}
+
+.btn-1:hover {
+  cursor: pointer;
+  background: linear-gradient(220deg, #5b107e, #41d1d1, #32cc2c);
+}
+
+.btn-2:hover {
+  cursor: pointer;
+  background-color: #02ca6d;
+}
+
+.resource-link a {
+  font-size: 1rem;
+  color: #31865e;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.resource-link a:hover {
+  font-size: 1.02rem;
+  color: #4bbb87;
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: 15vh;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 5px;
+}
+
+.gallery:first-child {
+  margin-left: 0px;
+}
+
+.photo-container {
+  font-size: 1.25rem;
+  color: white;
+  position: relative;
+}
+
+.photo-id-container {
+  width: 15px;
+  position: absolute;
+  top: 0px;
+  right: 44px;
+}
+
+.photo-id {
+  display: flex;
+  justify-content: flex-end;
+  width: 50px;
+}

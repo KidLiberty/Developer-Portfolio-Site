@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navbar() {
   return (
     <div className='nav'>
-      <span className='title'>Brandon</span>
+      <span className='logo'>Brandon</span>
       <ul className='link-list'>
         <li className='link'>
           <a href='#'>About Me</a>
