@@ -11,16 +11,24 @@ export default function Main() {
   }, [])
 
   return (
-    <section className='main'>
-      <div className='main-header'>
-        I am a Web Developer with a focus on React.js
+    <div className='main-container'>
+      <div className='main-content'>
+        <div className='main-header'>
+          I am a Web Developer with a focus on React.js
+        </div>
+        <div
+          className='react-logo-container'
+          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+        >
+          <img
+            className='main-content-img'
+            src={require('../images/react-logo.png')}
+            alt='React Logo'
+            style={{ transform: `rotate(${offsetY * 2}deg)` }}
+          />
+        </div>
       </div>
-      <div
-        className='react-logo-container'
-        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
-      >
-        <img src={require('../images/react-logo.png')} alt='React Logo' />
-      </div>
-    </section>
+      <div className='main-content-2'></div>
+    </div>
   )
 }

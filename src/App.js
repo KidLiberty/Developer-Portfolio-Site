@@ -3,20 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './css/App.css'
 
-import Main from './components/Main'
-import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import NFTGallery from './components/NFTGallery'
-import Footer from './components/Footer'
+import Home from './components/Home'
+import Crypto from './components/Crypto'
 
 export default function App() {
   return (
     <div className='app-container'>
-      <Navbar />
-      <Main />
-      <Projects />
-      <NFTGallery />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/crypto' element={<Crypto />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

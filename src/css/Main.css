@@ -1,16 +1,35 @@
-.main {
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
   text-align: center;
   font-size: 24px;
   z-index: -1;
 }
 
-.main img {
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.main-content-img {
   margin-top: 20px;
   height: 50px;
+}
+
+.main-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(236, 181, 243);
+  z-index: 1;
 }

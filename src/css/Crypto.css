@@ -1,0 +1,55 @@
+.crypto-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: yellow;
+}
+
+.AVAX-logo {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  height: 45px;
+  width: 45px;
+}
+
+.BTC-logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+.ETH-logo {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  height: 100px;
+  width: 100px;
+}
+
+.SOL-logo {
+  position: absolute;
+  bottom: 125px;
+  left: 40px;
+  height: 100px;
+  width: 100px;
+}
+
+.crypto-content {
+  min-height: 100vh;
+  min-width: 100vw;
+}

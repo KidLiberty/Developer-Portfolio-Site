@@ -1,18 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
     <div className='nav'>
-      <span className='logo'>Brandon</span>
+      <Link className='logo' to='/'>
+        Brandon
+      </Link>
       <ul className='link-list'>
         <li className='link'>
-          <a href='#'>About Me</a>
+          <Link to='#'>About Me</Link>
         </li>
         <li className='link'>
-          <a href='#'>Projects</a>
+          <Link to='/crypto'>Crypto</Link>
         </li>
         <li className='link'>
-          <a href='#'>Contact</a>
+          <Link to='#'>Contact</Link>
         </li>
       </ul>
     </div>
