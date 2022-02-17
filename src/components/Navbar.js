@@ -9,13 +9,13 @@ export default function Navbar() {
       </Link>
       <ul className='link-list'>
         <li className='link'>
-          <Link to='#'>About Me</Link>
+          <Link to='/about-me'>About Me</Link>
         </li>
         <li className='link'>
           <Link to='/crypto'>Crypto</Link>
         </li>
         <li className='link'>
-          <Link to='#'>Contact</Link>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
     </div>

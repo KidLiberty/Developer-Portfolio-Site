@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './css/App.css'
 
 import Home from './components/Home'
+import AboutMe from './components/AboutMe'
 import Crypto from './components/Crypto'
+import Contact from './components/Contact'
 
 export default function App() {
   return (
@@ -12,7 +14,9 @@ export default function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
+          <Route path='/about-me' element={<AboutMe />} />
           <Route path='/crypto' element={<Crypto />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </div>
