@@ -25,36 +25,45 @@ export default function Crypto() {
   return (
     <>
       <Navbar />
-      <div className='crypto-container'>
-        <div className='crypto-title'>
-          <span className='crypto-title-text-container-1'>Crypto.</span>
+      <div className='crypto__container'>
+        <div className='crypto__title-component'>
+          <span
+            className='title-text-container-1'
+            data-aos='fade'
+            data-aos-delay='750'
+            data-aos-once='true'
+          >
+            Crypto
+          </span>
           <span
             style={{ transform: `translateX(${offsetY * 0.05}px)` }}
-            className='crypto-title-text-container-2'
+            className='title-text-container-2'
           ></span>
-          <span className='crypto-title-text-container-3'></span>
           <span
-            className='crypto-title-text-container-4'
+            className='title-text-container-3'
+            style={{ transform: `translateX(${offsetY * -0.025}px)` }}
+          ></span>
+          <span
+            className='title-text-container-4'
             style={{ transform: `translateX(${offsetY * -0.75}px)` }}
           ></span>
           <span
-            style={{ transform: `translateX(${offsetY * 0.85}px)` }}
-            className='crypto-title-text-container-5'
+            style={{ transform: `translateX(${offsetY * 0.25}px)` }}
+            className='title-text-container-5'
           ></span>
           <div
             className='BTC-logo'
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(${offsetY * 0.65}px)` }}
           >
             <img
               src={require('../images/BTC_logo.png')}
               data-aos='fade'
               alt='BTC Logo'
-              style={{ transform: `rotate(${offsetY * 0.05}deg)` }}
             />
           </div>
           <div
             className='ETH-logo'
-            style={{ transform: `translateY(${offsetY * 0.75}px)` }}
+            style={{ transform: `translateY(${offsetY * 0.85}px)` }}
           >
             <img
               src={require('../images/ETH_logo.png')}
@@ -104,7 +113,43 @@ export default function Crypto() {
             />
           </div>
         </div>
-        <div className='crypto-content'>
+        <div className='crypto__main-content-container'>
+          <div
+            className='crypto__main-content-card'
+            data-aos='fade'
+            data-aos-once='true'
+          >
+            <div className='crypto__main-content-card-text'>
+              The concept of Decentralized Finance has fascinated me from the
+              beginning.
+            </div>
+            <div className='crypto__main-content-card-title'>DeFi</div>
+          </div>
+          <div
+            className='crypto__main-content-card'
+            data-aos='fade'
+            data-aos-once='true'
+          >
+            <div className='crypto__main-content-card-text'>
+              Secure transactions and unified ledger on the blockchain have
+              inspired about a world beyond exchange.
+            </div>
+            <div className='crypto__main-content-card-title'>Blockchain</div>
+          </div>
+          <div
+            className='crypto__main-content-card'
+            data-aos='fade'
+            data-aos-once='true'
+          >
+            <div className='crypto__main-content-card-text'>
+              From acquiring my first wallet to token pair swap on a DEX, to
+              owning my several NFT's - Decentralizaed Applications drive me
+              learn even more.
+            </div>
+            <div className='crypto__main-content-card-title'>Ecosystem</div>
+          </div>
+        </div>
+        <div className='crypto__NFT-gallery-container'>
           <NFTGallery />
         </div>
       </div>

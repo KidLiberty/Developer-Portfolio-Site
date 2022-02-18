@@ -36,7 +36,6 @@ export default function NFTGallery() {
 
   return (
     <div className='nft-gallery-container'>
-      <div className='title'>NFT Photo Gallery</div>
       <div className='btn-container'>
         <button
           className='btn-1'

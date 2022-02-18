@@ -1,15 +1,16 @@
-.crypto-container {
+.crypto__container {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   background-size: cover;
   background-position-x: 70%;
   background-position-y: center;
 }
 
-.crypto-title {
+.crypto__title-component {
   display: flex;
   justify-content: center;
   position: relative;
@@ -19,21 +20,21 @@
   min-width: 100vw;
 }
 
-.crypto-title-text-container-1 {
+.title-text-container-1 {
   position: absolute;
   z-index: 1;
-  color: rgb(55, 196, 149);
+  color: #7866d5;
   font-size: 2rem;
   font-weight: bold;
   padding: 50px 60px;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
   border-radius: 5px;
   background-color: rgba(135, 200, 243, 0.1);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
-.crypto-title-text-container-2 {
+.title-text-container-2 {
   position: absolute;
   z-index: 1;
   bottom: 20px;
@@ -49,7 +50,7 @@
   backdrop-filter: blur(8px);
 }
 
-.crypto-title-text-container-3 {
+.title-text-container-3 {
   position: absolute;
   z-index: 0;
   bottom: -50px;
@@ -65,7 +66,7 @@
   backdrop-filter: blur(8px);
 }
 
-.crypto-title-text-container-4 {
+.title-text-container-4 {
   position: absolute;
   z-index: 0;
   top: 40px;
@@ -81,7 +82,7 @@
   backdrop-filter: blur(8px);
 }
 
-.crypto-title-text-container-5 {
+.title-text-container-5 {
   position: absolute;
   z-index: 1;
   top: 200px;
@@ -89,6 +90,7 @@
   color: rgb(55, 196, 149);
   font-size: 2rem;
   font-weight: bold;
+  overflow-y: hidden;
   padding: 20px 25px;
   margin-bottom: 20vh;
   border-radius: 5px;
@@ -109,7 +111,8 @@
 .BTC-logo,
 .BTC-logo img {
   position: absolute;
-  top: 25px;
+  z-index: 1;
+  top: 30px;
   left: 30px;
   height: 80px;
   width: 80px;
@@ -142,7 +145,62 @@
   width: 90px;
 }
 
-.crypto-content {
+/* Content */
+
+.crypto__main-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(255, 248, 253);
+  padding: 125px 0px;
+}
+
+.crypto__main-content-card {
+  height: 400px;
+  width: 400px;
+  background-color: #7866d5;
+  background: linear-gradient(45deg, #7866d5, #e8c3fd);
+  border-radius: 15px;
+  margin: 50px;
+}
+
+.crypto__main-content-card:hover {
+  transform: translateX(10px);
+}
+
+.crypto__main-content-card-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50%;
+  width: 65%;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.crypto__main-content-card-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  padding-right: 25px;
+}
+
+.crypto__NFT-gallery-container {
   min-height: 100vh;
   min-width: 100vw;
 }
