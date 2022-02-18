@@ -35,11 +35,18 @@ export default function NFTGallery() {
   }
 
   return (
-    <div className='nft-gallery-container'>
-      <div className='btn-container'>
+    <div className='NFTGallery__container'>
+      <div className='NFTGallery__main'>
+        <div className='NFTGallery__title'>NFTs</div>
+        <div className='NFTGallery__description-text'>
+          Non-Fungible Tokens have gained staggering popularity. Below are some
+          of the Samoyed Coin NFTs that I have acquired existing on the Solana
+          blockchain.
+        </div>
         <button
           className='btn-1'
           data-aos='fade-left'
+          data-aos-once='true'
           onClick={() => {
             setPhotoNumber(getRandomInt(1, 5))
             const sort = [
@@ -66,11 +73,12 @@ export default function NFTGallery() {
         <button
           className='btn-2'
           data-aos='fade-right'
+          data-aos-once='true'
           onClick={() => savePhotos()}
         >
           Save NFTs
         </button>
-        <div className='resource-link' data-aos='fade'>
+        <div className='resource-link' data-aos='fade' data-aos-once='true'>
           <a
             href='https://github.com/KidLiberty'
             target='_blank'
@@ -80,7 +88,7 @@ export default function NFTGallery() {
           </a>
         </div>
       </div>
-      <div className='gallery'>
+      <div className='NFTGallery__photo-reel'>
         {gallery.map(object => (
           <div key={object.id} className='photo-container'>
             <div className='photo-id-container'>
@@ -102,8 +110,8 @@ export default function NFTGallery() {
               alt='Samo Pic'
               style={
                 object.isLoading
-                  ? { border: '2px solid #fddc6d' }
-                  : { border: '2px solid #25f09b' }
+                  ? { border: '2px solid #fddc6d', borderRadius: '3px' }
+                  : { border: '2px solid #25f09b', borderRadius: '3px' }
               }
             />
           </div>

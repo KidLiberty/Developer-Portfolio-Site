@@ -132,7 +132,7 @@ export default function Crypto() {
           >
             <div className='crypto__main-content-card-text'>
               Secure transactions and unified ledger on the blockchain have
-              inspired about a world beyond exchange.
+              sparked inspiration for a new era of investing possibilities.
             </div>
             <div className='crypto__main-content-card-title'>Blockchain</div>
           </div>
@@ -142,9 +142,8 @@ export default function Crypto() {
             data-aos-once='true'
           >
             <div className='crypto__main-content-card-text'>
-              From acquiring my first wallet to token pair swap on a DEX, to
-              owning my several NFT's - Decentralizaed Applications drive me
-              learn even more.
+              From Ethereum dapps to full-fledged NFT trading across multiple
+              coins, blockchain ecosystems motivate me to keep learning.
             </div>
             <div className='crypto__main-content-card-title'>Ecosystem</div>
           </div>

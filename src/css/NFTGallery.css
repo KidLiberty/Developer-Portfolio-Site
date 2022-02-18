@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.nft-gallery-container {
+.NFTGallery__container {
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -12,14 +12,36 @@
   background-color: black;
 }
 
-.btn-container {
+.NFTGallery__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  font-weight: bold;
+  color: rgb(195, 103, 223);
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.NFTGallery__description-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 90px;
+  text-align: justify;
+}
+
+.NFTGallery__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
   width: 100vw;
-  padding-top: 130px;
 }
 
 .btn-1 {
@@ -68,8 +90,9 @@
   text-decoration: none;
 }
 
-.gallery {
+.NFTGallery__photo-reel {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
   min-height: 20vh;
@@ -77,13 +100,13 @@
   overflow-x: auto;
 }
 
-.gallery img {
+.NFTGallery__photo-reel img {
   width: 100px;
   height: 100px;
   margin: 0px 5px;
 }
 
-.gallery:first-child {
+.NFTGallery__photo-reel:first-child {
   margin-left: 0px;
 }
 
