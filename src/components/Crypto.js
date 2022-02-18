@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import Navbar from './Navbar'
 import NFTGallery from './NFTGallery'
 
 export default function Crypto() {

@@ -1,4 +1,4 @@
-.main-container {
+.home__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,7 @@
   z-index: -1;
 }
 
-.main-content {
+.home__landing-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +18,12 @@
   min-width: 100vw;
 }
 
-.main-content-img {
+.home__landing-container img {
   margin-top: 20px;
   height: 50px;
 }
 
-.main-content-2 {
+.home__cards-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,5 +31,6 @@
   min-height: 100vh;
   min-width: 100vw;
   background-color: rgb(236, 181, 243);
+  background-color: white;
   z-index: 1;
 }
