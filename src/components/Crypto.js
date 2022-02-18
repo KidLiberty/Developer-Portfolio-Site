@@ -126,15 +126,17 @@ export default function Crypto() {
             <div className='crypto__main-content-card-title'>DeFi</div>
           </div>
           <div
-            className='crypto__main-content-card'
+            className='crypto__main-content-card-middle'
             data-aos='fade'
             data-aos-once='true'
           >
-            <div className='crypto__main-content-card-text'>
+            <div className='crypto__main-content-card-middle-text'>
               Secure transactions and unified ledger on the blockchain have
               sparked inspiration for a new era of investing possibilities.
             </div>
-            <div className='crypto__main-content-card-title'>Blockchain</div>
+            <div className='crypto__main-content-card-middle-title'>
+              Blockchain
+            </div>
           </div>
           <div
             className='crypto__main-content-card'

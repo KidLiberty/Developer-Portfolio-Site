@@ -36,12 +36,25 @@ export default function NFTGallery() {
 
   return (
     <div className='NFTGallery__container'>
+      <div className='NFTGallery__title'>
+        <div data-aos='fade-right' data-aos-delay='900' data-aos-once='true'>
+          N
+        </div>
+        <div data-aos='fade-right' data-aos-delay='750' data-aos-once='true'>
+          F
+        </div>
+        <div data-aos='fade-right' data-aos-delay='500' data-aos-once='true'>
+          T
+        </div>
+        <div data-aos='fade-right' data-aos-delay='250' data-aos-once='true'>
+          s
+        </div>
+      </div>
       <div className='NFTGallery__main'>
-        <div className='NFTGallery__title'>NFTs</div>
         <div className='NFTGallery__description-text'>
-          Non-Fungible Tokens have gained staggering popularity. Below are some
-          of the Samoyed Coin NFTs that I have acquired existing on the Solana
-          blockchain.
+          Non-Fungible Tokens have gained staggering popularity. Click below to
+          view some of the Samoyed Coin NFTs that I have acquired existing on
+          the Solana blockchain.
         </div>
         <button
           className='btn-1'
