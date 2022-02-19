@@ -176,12 +176,27 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) and (min-width: 300px) {
   .home__grid-card {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     border-radius: 20px;
     box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
+  }
+
+  .home__cards-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: none;
+    height: 350vh;
+    width: 50vw;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .home__landing-header {
