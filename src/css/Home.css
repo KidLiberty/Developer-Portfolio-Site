@@ -148,12 +148,11 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 350px) {
   .home__landing-header {
     font-size: 2rem;
   }
 
-  /* React to reduce items? Over flows 100vh */
   .home__cards-grid {
     display: grid;
     justify-content: center;
@@ -174,5 +173,11 @@
     height: 350px;
     border-radius: 20px;
     box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
+  }
+}
+
+@media (max-width: 450px) {
+  .home__landing-header {
+    font-size: 1.5rem;
   }
 }
