@@ -4,10 +4,14 @@ import Navbar from './Navbar'
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0)
+  const [width, setWidth] = useState(0)
   const handleScroll = () => setOffsetY(window.scrollY)
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', () => {
+      setWidth(window.innerWidth)
+    })
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -38,26 +42,26 @@ export default function Home() {
 
         <div className='home__cards-container'>
           <div className='home__cards-grid'>
-            <div className='home__main-content-card'>
-              <div className='home__main-content-card-text'>
-                The concept of Decentralized Finance has fascinated me from the
-                beginning.
-              </div>
-              <div className='home__main-content-card-title'>DeFi</div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-1' : ''}`}>
+              1
             </div>
-            <div className='home__main-content-card'>
-              <div className='home__main-content-card-text'>
-                The concept of Decentralized Finance has fascinated me from the
-                beginning.
-              </div>
-              <div className='home__main-content-card-title'>DeFi</div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-2' : ''}`}>
+              2
             </div>
-            <div className='home__main-content-card'>
-              <div className='home__main-content-card-text'>
-                The concept of Decentralized Finance has fascinated me from the
-                beginning.
-              </div>
-              <div className='home__main-content-card-title'>DeFi</div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-3' : ''}`}>
+              3
+            </div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-4' : ''}`}>
+              4
+            </div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-5' : ''}`}>
+              5
+            </div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-6' : ''}`}>
+              6
+            </div>
+            <div className={`home__grid-card ${width > 1000 ? 'card-7' : ''}`}>
+              7
             </div>
           </div>
         </div>
