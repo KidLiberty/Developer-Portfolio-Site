@@ -4,16 +4,17 @@ import Navbar from './Navbar'
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0)
-  const [width, setWidth] = useState(0)
+  const [cardOneHovered, setCardOneHovered] = useState(false)
+  const [cardTwoHovered, setCardTwoHovered] = useState(false)
+  const [cardThreeHovered, setCardThreeHovered] = useState(false)
   const handleScroll = () => setOffsetY(window.scrollY)
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    window.addEventListener('resize', () => {
-      setWidth(window.innerWidth)
-    })
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
   return (
@@ -53,18 +54,16 @@ export default function Home() {
             </div>
             <div className='grid-card-3'>
               <div className='grid-card-3-text'>Card 3</div>
-              <div className='grid-card-3-title'>Title</div>
             </div>
             <div className='grid-card-4'>
-              <div className='grid-card-4-text'>Card 4</div>
-              <div className='grid-card-4-title'>Title</div>
+              <div className='grid-card-4-title'>LOL</div>
             </div>
             <div
               className='grid-card-5'
               style={{ backgroundPositionX: `${offsetY * 0.055}%` }}
             >
               <div className='grid-card-5-text'>
-                Inspired to pursure standards resulting in create
+                Inspired to pursue standards resulting in
               </div>
               <div className='grid-card-5-title'>
                 <span>
@@ -73,9 +72,43 @@ export default function Home() {
               </div>
             </div>
             <div className='grid-card-6'>
-              <div className='grid-card-6-card first'>Programming</div>
-              <div className='grid-card-6-card'>Styling</div>
-              <div className='grid-card-6-card last'>Cryptocurrency</div>
+              <div
+                className='grid-card-6-card-1'
+                onMouseEnter={() => setCardOneHovered(!cardOneHovered)}
+                onMouseLeave={() => setCardOneHovered(!cardOneHovered)}
+              >
+                <div className='grid-card-6-card-1-title'>Programming</div>
+                {cardOneHovered === true && (
+                  <div className='grid-card-6-card-1-text'>
+                    Starting as a hobby, to an undergrad study - to now a career
+                  </div>
+                )}
+              </div>
+              <div
+                className='grid-card-6-card-2'
+                onMouseEnter={() => setCardTwoHovered(!cardTwoHovered)}
+                onMouseLeave={() => setCardTwoHovered(!cardTwoHovered)}
+              >
+                <div className='grid-card-6-card-2-title'>Style</div>
+                {cardTwoHovered === true && (
+                  <div className='grid-card-6-card-2-text'>
+                    Starting as a hobby, to an undergrad study - to now a career
+                  </div>
+                )}
+              </div>
+              <div
+                className='grid-card-6-card-3'
+                onMouseEnter={() => setCardThreeHovered(!cardThreeHovered)}
+                onMouseLeave={() => setCardThreeHovered(!cardThreeHovered)}
+              >
+                <div className='grid-card-6-card-3-title'>Cryptocurrency</div>
+                {cardThreeHovered === true && (
+                  <div className='grid-card-6-card-2-text'>
+                    In pursuit to take my skills to the space of Decentralized
+                    Finance.
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
