@@ -28,7 +28,8 @@
   height: 50px;
 }
 
-.home__cards-container {
+.home__cards-grid-container {
+  --default-blue: #5757ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +38,7 @@
   min-width: 100vw;
   background-color: rgb(236, 181, 243);
   background-color: white;
+
   z-index: 1;
 }
 
@@ -47,99 +49,59 @@
   grid-template-areas:
     'card1 card1 card2'
     'card3 card4 card5'
-    'card6 card7 card7';
+    'card6 card6 card6';
   height: 125vh;
   width: 90vw;
-  gap: 35px;
+  gap: 30px;
 }
 
-.home__grid-card {
-  border-radius: 20px;
-  box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
-}
-
-.card-1 {
+.grid-card-1 {
   grid-area: card1;
-  color: white;
-  background-color: #2d5eff;
-}
-
-.card-1 div {
-  height: 50%;
-  width: 100%;
-}
-
-.card-1 div:nth-child(1) {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-weight: bold;
-  font-size: 2rem;
-  padding-left: 14px;
-}
-
-.card-1 div:nth-child(2) {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-weight: bold;
-  font-size: 2;
-  padding-right: 100px;
-}
-
-.card-2 {
-  grid-area: card2;
-}
-
-.card-2-text-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.card-2-left-section {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(146, 146, 146);
+  background-color: var(--default-blue);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.card-2-right-section {
+.grid-card-1-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.grid-card-2 {
+  display: flex;
+}
+
+.grid-card-2-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: #c547ff;
+}
+
+.grid-card-2-title {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(30deg, #f0c1ff, #efd7fc);
   color: white;
   font-weight: bold;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  height: 100%;
-  width: 100%;
-  opacity: 0.25;
-  background: linear-gradient(rgb(219, 192, 253), rgb(245, 139, 255));
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.card-3 {
-  grid-area: card3;
-}
-
-.card-4 {
-  grid-area: card4;
-}
-
-.card-5 {
-  grid-area: card5;
-}
-
-.card-6 {
-  grid-area: card6;
-}
-
-.card-7 {
-  grid-area: card7;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  opacity: 0.5;
 }
 
 .test-container {
@@ -148,31 +110,94 @@
   background-color: rgb(175, 188, 233);
 }
 
+.grid-card-3 {
+  border-top-left-radius: 20px;
+
+  background: linear-gradient(135deg, rgb(230, 245, 240), rgb(160, 240, 213));
+}
+
+.grid-card-4 {
+  border-radius: 25px;
+  border: 1px solid grey;
+}
+
+.grid-card-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: right;
+  background-image: url('../images/CSS_circles.jpeg');
+  background-size: cover;
+  background-position-y: center;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+
+.grid-card-5 div {
+  height: 50%;
+  width: 100%;
+}
+
+.grid-card-5-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: left;
+  height: 50%;
+  width: 20%;
+  font-size: 1.15rem;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.grid-card-5 span > span {
+  color: var(--default-blue);
+}
+
+.grid-card-6 {
+  grid-area: card6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.grid-card-6 div {
+  width: 25%;
+  height: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.grid-card-6 div:hover {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0;
+  box-shadow: 0 5px 15px 0px hsl(0, 0%, 70%);
+}
+
+.first {
+  font-size: 1.15rem;
+}
+
+.last {
+  font-size: 1.15rem;
+}
+
 @media (max-width: 1000px) and (min-width: 675px) {
   .home__landing-header {
     font-size: 3rem;
-  }
-
-  .home__cards-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: none;
-    height: 175vh;
-    width: 50vw;
-    gap: 70px;
-    margin-top: 400px;
-    margin-bottom: 400px;
-  }
-
-  .home__grid-card {
-    width: 325px;
-    height: 325px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
   }
 }
 
@@ -180,79 +205,15 @@
   .home__landing-header {
     font-size: 2.5rem;
   }
-
-  .home__cards-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: none;
-    height: 125vh;
-    width: 50vw;
-    gap: 60px;
-  }
-
-  .home__grid-card {
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
-  }
 }
 
 @media (max-width: 600px) and (min-width: 350px) {
   .home__landing-header {
     font-size: 2rem;
   }
-
-  .home__cards-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: none;
-    height: 350vh;
-    width: 50vw;
-    gap: 70px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  .home__grid-card {
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
-  }
 }
 
 @media (max-width: 450px) and (min-width: 300px) {
-  .home__grid-card {
-    width: 275px;
-    height: 275px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
-  }
-
-  .home__cards-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: none;
-    height: 350vh;
-    width: 50vw;
-    gap: 70px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-  }
-
   .home__landing-header {
     font-size: 1.5rem;
   }

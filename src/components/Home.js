@@ -23,7 +23,7 @@ export default function Home() {
         <div className='home__landing-container'>
           <div>
             <div className='home__landing-header'>Hi,</div>
-            <div className='home__landing-header'>I'm Brandon</div>
+            <div className='home__landing-header'>I'm Brandon.</div>
             <div className='home__landing-header'>Front End Web Developer</div>
           </div>
 
@@ -40,36 +40,42 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='home__cards-container'>
+        <div className='home__cards-grid-container'>
           <div className='home__cards-grid'>
-            <div className={`home__grid-card ${width > 1000 ? 'card-1' : ''}`}>
-              <div className='card-1-text-container'>
-                <div>Writing websites with React.js</div>
-              </div>
-              <div>Test</div>
-            </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-2' : ''}`}>
-              <div className='card-2-text-container'>
-                <div className='card-2-left-section'>
-                  Writing websites with React.js
-                </div>
-                <div className='card-2-right-section'>Test</div>
+            <div className='grid-card-1'>
+              <div className='grid-card-1-text'>
+                My passion is developing responsive, dymanic websites in React
               </div>
             </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-3' : ''}`}>
-              3
+            <div className='grid-card-2'>
+              <div className='grid-card-2-text'></div>
+              <div className='grid-card-2-title'>Title</div>
             </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-4' : ''}`}>
-              4
+            <div className='grid-card-3'>
+              <div className='grid-card-3-text'>Card 3</div>
+              <div className='grid-card-3-title'>Title</div>
             </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-5' : ''}`}>
-              5
+            <div className='grid-card-4'>
+              <div className='grid-card-4-text'>Card 4</div>
+              <div className='grid-card-4-title'>Title</div>
             </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-6' : ''}`}>
-              6
+            <div
+              className='grid-card-5'
+              style={{ backgroundPositionX: `${offsetY * 0.055}%` }}
+            >
+              <div className='grid-card-5-text'>
+                Inspired to pursure standards resulting in create
+              </div>
+              <div className='grid-card-5-title'>
+                <span>
+                  <span>Eye-catching </span>User Interfaces
+                </span>
+              </div>
             </div>
-            <div className={`home__grid-card ${width > 1000 ? 'card-7' : ''}`}>
-              7
+            <div className='grid-card-6'>
+              <div className='grid-card-6-card first'>Programming</div>
+              <div className='grid-card-6-card'>Styling</div>
+              <div className='grid-card-6-card last'>Cryptocurrency</div>
             </div>
           </div>
         </div>
