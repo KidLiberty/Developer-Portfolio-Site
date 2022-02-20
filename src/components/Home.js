@@ -43,10 +43,18 @@ export default function Home() {
         <div className='home__cards-container'>
           <div className='home__cards-grid'>
             <div className={`home__grid-card ${width > 1000 ? 'card-1' : ''}`}>
-              1
+              <div className='card-1-text-container'>
+                <div>Writing websites with React.js</div>
+              </div>
+              <div>Test</div>
             </div>
             <div className={`home__grid-card ${width > 1000 ? 'card-2' : ''}`}>
-              2
+              <div className='card-2-text-container'>
+                <div className='card-2-left-section'>
+                  Writing websites with React.js
+                </div>
+                <div className='card-2-right-section'>Test</div>
+              </div>
             </div>
             <div className={`home__grid-card ${width > 1000 ? 'card-3' : ''}`}>
               3

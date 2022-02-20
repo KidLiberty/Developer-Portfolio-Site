@@ -3,10 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   text-align: center;
   font-size: 24px;
-  z-index: -1;
 }
 
 .home__landing-container {
@@ -62,10 +60,66 @@
 
 .card-1 {
   grid-area: card1;
+  color: white;
+  background-color: #2d5eff;
+}
+
+.card-1 div {
+  height: 50%;
+  width: 100%;
+}
+
+.card-1 div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 14px;
+}
+
+.card-1 div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2;
+  padding-right: 100px;
 }
 
 .card-2 {
   grid-area: card2;
+}
+
+.card-2-text-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.card-2-left-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(146, 146, 146);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.card-2-right-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.25;
+  background: linear-gradient(rgb(219, 192, 253), rgb(245, 139, 255));
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .card-3 {
@@ -194,9 +248,9 @@
     grid-template-areas: none;
     height: 350vh;
     width: 50vw;
-    gap: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    gap: 70px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .home__landing-header {
