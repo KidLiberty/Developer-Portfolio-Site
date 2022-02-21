@@ -40,10 +40,10 @@
   background-color: rgb(236, 181, 243);
   background-color: white;
   z-index: 1;
-  background: url('../images/grid_background.jpeg');
+  /* background: url('../images/grid_background.jpeg');
   background-size: cover;
   background-position-x: 40%;
-  background-position-y: center;
+  background-position-y: center; */
 }
 
 .home__cards-grid {
@@ -105,6 +105,8 @@
   height: 100%;
   width: 50%;
   background-color: rgb(206, 154, 255);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .grid-card-2-title {
@@ -117,6 +119,7 @@
   color: white;
   font-weight: bold;
   border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   opacity: 0.5;

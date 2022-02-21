@@ -64,7 +64,7 @@ export default function Home() {
               <div className='grid-card-2-title'>Title</div>
             </div>
             <div className='grid-card-3'>
-              <div className='grid-card-3-text'></div>
+              <div className='grid-card-3-text'>Full-Stack developer.</div>
             </div>
             <a
               className='grid-card-4'
