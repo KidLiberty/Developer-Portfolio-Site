@@ -6,7 +6,10 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      Test
+      <div className='contact__container'>
+        <div className='contact__email-container'>Test</div>
+        <div className='contact__discord-container'>Test</div>
+      </div>
     </>
   )
 }

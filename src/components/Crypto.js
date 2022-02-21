@@ -144,8 +144,8 @@ export default function Crypto() {
             data-aos-once='true'
           >
             <div className='crypto__main-content-card-text'>
-              From Ethereum dapps to full-fledged NFT trading across multiple
-              coins, blockchain ecosystems motivate me to keep learning.
+              From Ethereum dapps to full-fledged NFT exchanges, blockchain
+              ecosystems motivate me to keep learning.
             </div>
             <div className='crypto__main-content-card-title'>Ecosystem</div>
           </div>

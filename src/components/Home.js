@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 import Navbar from './Navbar'
 
 export default function Home() {
@@ -53,7 +56,7 @@ export default function Home() {
           >
             <div className='grid-card-1'>
               <div className='grid-card-1-text'>
-                My passion is developing responsive, dynamic websites in React
+                My passion is to develop responsive, dynamic websites in React
               </div>
             </div>
             <div className='grid-card-2'>
@@ -63,15 +66,23 @@ export default function Home() {
             <div className='grid-card-3'>
               <div className='grid-card-3-text'></div>
             </div>
-            <div className='grid-card-4'>
-              <div className='grid-card-4-title'>LOL</div>
-            </div>
+            <a
+              className='grid-card-4'
+              href='https://github.com/KidLiberty'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='grid-card-4-content'>
+                <FontAwesomeIcon icon={faArrowRight} className='right-arrow' />
+              </div>
+              <div className='grid-card-4-title'>Github</div>
+            </a>
             <div
               className='grid-card-5'
               style={{ backgroundPositionX: `${offsetY * 0.05}%` }}
             >
               <div className='grid-card-5-text'>
-                Inspired to pursue standards resulting in
+                Chasing modern standards resulting in
               </div>
               <div className='grid-card-5-title'>
                 <span>
