@@ -81,7 +81,7 @@ export default function NFTGallery() {
             setId(id + 1)
           }}
         >
-          Get NFT!
+          View NFTs!
         </button>
         <button
           className='btn-2'
@@ -93,7 +93,7 @@ export default function NFTGallery() {
         </button>
         <div className='resource-link' data-aos='fade' data-aos-once='true'>
           <a
-            href='https://github.com/KidLiberty'
+            href='https://en.wikipedia.org/wiki/Non-fungible_token#:~:text=A%20non%2Dfungible%20token%20(NFT,can%20be%20sold%20and%20traded.&text=NFT%20ledgers%20claim%20to%20provide,an%20NFT%20can%20be%20uncertain.'
             target='_blank'
             rel='noreferrer'
           >

@@ -115,39 +115,37 @@ export default function Crypto() {
         </div>
         <div className='crypto__main-content-container'>
           <div
-            className='crypto__main-content-card'
+            className='crypto__main-content-card-1'
             data-aos='fade'
             data-aos-once='true'
           >
-            <div className='crypto__main-content-card-text'>
+            <div className='crypto__main-content-card-1-text'>
               The concept of Decentralized Finance has fascinated me from the
               beginning.
             </div>
-            <div className='crypto__main-content-card-title'>DeFi</div>
+            <div className='crypto__main-content-card-1-title'>DeFi</div>
           </div>
           <div
-            className='crypto__main-content-card-middle'
+            className='crypto__main-content-card-2'
             data-aos='fade'
             data-aos-once='true'
           >
-            <div className='crypto__main-content-card-middle-text'>
+            <div className='crypto__main-content-card-2-text'>
               Secure transactions and unified ledger on the blockchain have
               sparked inspiration for a new era of investing possibilities.
             </div>
-            <div className='crypto__main-content-card-middle-title'>
-              Blockchain
-            </div>
+            <div className='crypto__main-content-card-2-title'>Blockchain</div>
           </div>
           <div
-            className='crypto__main-content-card'
+            className='crypto__main-content-card-3'
             data-aos='fade'
             data-aos-once='true'
           >
-            <div className='crypto__main-content-card-text'>
+            <div className='crypto__main-content-card-3-text'>
               From Ethereum dapps to full-fledged NFT exchanges, blockchain
               ecosystems motivate me to keep learning.
             </div>
-            <div className='crypto__main-content-card-title'>Ecosystem</div>
+            <div className='crypto__main-content-card-3-title'>Ecosystem</div>
           </div>
         </div>
         <div className='crypto__NFT-gallery-container'>

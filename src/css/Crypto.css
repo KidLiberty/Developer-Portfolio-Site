@@ -159,7 +159,7 @@
   padding: 125px 0px;
 }
 
-.crypto__main-content-card {
+.crypto__main-content-card-1 {
   height: 300px;
   width: 300px;
   background-image: linear-gradient(45deg, #7866d5, #e8c3fd);
@@ -168,21 +168,8 @@
   border-radius: 15px;
   opacity: 0.25;
 }
-.crypto__main-content-card-middle {
-  height: 300px;
-  width: 300px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(164, 150, 249, 0.1),
-    rgba(164, 150, 249, 0.3)
-  );
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-radius: 15px;
-  opacity: 0.25;
-}
 
-.crypto__main-content-card-text {
+.crypto__main-content-card-1-text {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -196,7 +183,7 @@
   border-radius: 20px;
 }
 
-.crypto__main-content-card-title {
+.crypto__main-content-card-1-title {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -209,7 +196,21 @@
   padding-right: 25px;
 }
 
-.crypto__main-content-card-middle-text {
+.crypto__main-content-card-2 {
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(164, 150, 249, 0.1),
+    rgba(164, 150, 249, 0.3)
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  opacity: 0.25;
+}
+
+.crypto__main-content-card-2-text {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -223,13 +224,49 @@
   border-radius: 20px;
 }
 
-.crypto__main-content-card-middle-title {
+.crypto__main-content-card-2-title {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 50%;
   width: 100%;
   color: #7866d5;
+  font-size: 2.25rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  padding-right: 25px;
+}
+
+.crypto__main-content-card-3 {
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(45deg, #7866d5, #e8c3fd);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  opacity: 0.25;
+}
+.crypto__main-content-card-3-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50%;
+  width: 75%;
+  padding-top: 20px;
+  padding-left: 25px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.crypto__main-content-card-3-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+  color: white;
   font-size: 2.25rem;
   font-weight: bolder;
   padding-bottom: 20px;
@@ -251,15 +288,98 @@
     min-width: 100vw;
   }
 
-  .crypto__main-content-card {
+  .crypto__main-content-card-1 {
     height: 350px;
-    width: 500px;
+    width: 70%;
     margin: 30px;
   }
 
-  .crypto__main-content-card-middle {
+  .crypto__main-content-card-1-title {
+    font-size: 4rem;
+  }
+
+  .crypto__main-content-card-1-text {
+    font-size: 2rem;
+  }
+
+  .crypto__main-content-card-2 {
     height: 350px;
-    width: 500px;
+    width: 70%;
     margin: 30px;
+  }
+
+  .crypto__main-content-card-2-title {
+    font-size: 4rem;
+  }
+
+  .crypto__main-content-card-2-text {
+    font-size: 2rem;
+  }
+
+  .crypto__main-content-card-3 {
+    height: 350px;
+    width: 70%;
+    margin: 30px;
+  }
+
+  .crypto__main-content-card-3-title {
+    font-size: 4rem;
+  }
+
+  .crypto__main-content-card-3-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 300px) {
+  .crypto__main-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200vh;
+    min-width: 100vw;
+  }
+
+  .crypto__main-content-card-1 {
+    height: 350px;
+    width: 70%;
+    margin: 30px;
+  }
+
+  .crypto__main-content-card-1-title {
+    font-size: 2.5rem;
+  }
+
+  .crypto__main-content-card-1-text {
+    font-size: 2rem;
+  }
+
+  .crypto__main-content-card-2 {
+    height: 350px;
+    width: 70%;
+    margin: 30px;
+  }
+
+  .crypto__main-content-card-2-title {
+    font-size: 2.5rem;
+  }
+
+  .crypto__main-content-card-2-text {
+    font-size: 1.5rem;
+  }
+
+  .crypto__main-content-card-3 {
+    height: 350px;
+    width: 70%;
+    margin: 30px;
+  }
+
+  .crypto__main-content-card-3-title {
+    font-size: 2rem;
+  }
+
+  .crypto__main-content-card-3-text {
+    font-size: 1.5rem;
   }
 }
