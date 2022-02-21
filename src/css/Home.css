@@ -38,7 +38,6 @@
   min-width: 100vw;
   background-color: rgb(236, 181, 243);
   background-color: white;
-
   z-index: 1;
 }
 
@@ -55,6 +54,20 @@
   gap: 30px;
 }
 
+.home__cards-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'card1 card1'
+    'card2 card4'
+    'card6 card6'
+    'card5 .';
+  height: 125vh;
+  width: 90vw;
+  gap: 30px;
+}
+
 .grid-card-1 {
   grid-area: card1;
   background-color: var(--default-blue);
@@ -65,8 +78,8 @@
 .grid-card-1-text {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  height: 50%;
+  align-items: flex-start;
+  height: 100%;
   width: 100%;
   text-align: left;
   color: white;
@@ -333,9 +346,67 @@
   }
 }
 
-@media (max-width: 775px) and (min-width: 600px) {
+@media (max-width: 900px) and (min-width: 675px) {
+  .grid-card-6-card-1-title {
+    font-size: 1rem;
+  }
+  .grid-card-6-card-2-title {
+    font-size: 1rem;
+  }
+  .grid-card-6-card-3-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 600px) {
   .home__landing-header {
     font-size: 2.5rem;
+  }
+
+  .grid-card-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2-text {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .grid-card-2-title {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .grid-card-3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
   }
 }
 
@@ -343,10 +414,134 @@
   .home__landing-header {
     font-size: 2rem;
   }
+
+  .home__cards-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3'
+      'card4'
+      'card5'
+      'card6';
+    height: 125vh;
+    width: 90vw;
+    gap: 30px;
+  }
+
+  .grid-card-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2-text {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .grid-card-2-title {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .grid-card-3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
 }
 
 @media (max-width: 450px) and (min-width: 300px) {
   .home__landing-header {
     font-size: 1.5rem;
+  }
+
+  .home__cards-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3'
+      'card4'
+      'card5'
+      'card6';
+    height: 125vh;
+    width: 90vw;
+    gap: 30px;
+  }
+
+  .grid-card-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-2-text {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .grid-card-2-title {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .grid-card-3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+
+  .grid-card-6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
   }
 }

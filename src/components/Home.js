@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0)
+  const [windowSize, setWindowSize] = useState(0)
   const [cardOneHovered, setCardOneHovered] = useState(false)
   const [cardTwoHovered, setCardTwoHovered] = useState(false)
   const [cardThreeHovered, setCardThreeHovered] = useState(false)
@@ -11,6 +12,9 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', () => {
+      setWindowSize(window.innerWidth)
+    })
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
@@ -42,10 +46,14 @@ export default function Home() {
         </div>
 
         <div className='home__cards-grid-container'>
-          <div className='home__cards-grid'>
+          <div
+            className={
+              windowSize >= 750 ? 'home__cards-grid' : 'home__cards-list'
+            }
+          >
             <div className='grid-card-1'>
               <div className='grid-card-1-text'>
-                My passion is developing responsive, dymanic websites in React
+                My passion is developing responsive, dynamic websites in React
               </div>
             </div>
             <div className='grid-card-2'>
@@ -53,7 +61,7 @@ export default function Home() {
               <div className='grid-card-2-title'>Title</div>
             </div>
             <div className='grid-card-3'>
-              <div className='grid-card-3-text'>Card 3</div>
+              <div className='grid-card-3-text'></div>
             </div>
             <div className='grid-card-4'>
               <div className='grid-card-4-title'>LOL</div>
