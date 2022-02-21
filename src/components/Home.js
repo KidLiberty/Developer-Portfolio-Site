@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <div
               className='grid-card-5'
-              style={{ backgroundPositionX: `${offsetY * 0.055}%` }}
+              style={{ backgroundPositionX: `${offsetY * 0.05}%` }}
             >
               <div className='grid-card-5-text'>
                 Inspired to pursue standards resulting in
@@ -88,7 +88,7 @@ export default function Home() {
                 <div className='grid-card-6-card-1-title'>Programming</div>
                 {cardOneHovered === true && (
                   <div className='grid-card-6-card-1-text'>
-                    Starting as a hobby, to an undergrad study - to now a career
+                    Starting as a hobby, to an undergrad study - to a career
                   </div>
                 )}
               </div>

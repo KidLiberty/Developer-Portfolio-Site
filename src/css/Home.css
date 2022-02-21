@@ -34,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 200vh;
+  min-height: 250vh;
   min-width: 100vw;
   background-color: rgb(236, 181, 243);
   background-color: white;
@@ -408,6 +408,33 @@
     height: 100%;
     border-radius: 25px;
   }
+
+  .grid-card-6-card-1-title {
+    font-size: 0.85rem;
+    padding-left: 12.5px;
+  }
+
+  .grid-card-6-card-1-text {
+    font-size: 0.825rem;
+  }
+
+  .grid-card-6-card-2-title {
+    font-size: 0.85rem;
+    padding-left: 12.5px;
+  }
+
+  .grid-card-6-card-2-text {
+    font-size: 0.825rem;
+  }
+
+  .grid-card-6-card-3-title {
+    font-size: 0.85rem;
+    padding-left: 12.5px;
+  }
+
+  .grid-card-6-card-3-text {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 600px) and (min-width: 350px) {
@@ -426,15 +453,18 @@
       'card4'
       'card5'
       'card6';
-    height: 125vh;
+    height: 150vh;
     width: 90vw;
-    gap: 30px;
   }
 
   .grid-card-1 {
     width: 100%;
     height: 100%;
     border-radius: 25px;
+  }
+
+  .grid-card-1-text {
+    font-size: 1.9rem;
   }
 
   .grid-card-2 {
@@ -469,12 +499,67 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    font-size: 1.3rem;
+  }
+
+  .grid-card-5-title {
+    font-size: 1.5rem;
   }
 
   .grid-card-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 200%;
     border-radius: 25px;
+    background-color: white;
+  }
+
+  .grid-card-6-card-1 {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .grid-card-6-card-1-title {
+    font-size: 1.25rem;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .grid-card-6-card-1-text {
+    font-size: 1.15rem;
+  }
+
+  .grid-card-6-card-2 {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .grid-card-6-card-2-title {
+    font-size: 1.25rem;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .grid-card-6-card-2-text {
+    font-size: 1.15rem;
+  }
+
+  .grid-card-6-card-3 {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .grid-card-6-card-3-title {
+    font-size: 1.25rem;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .grid-card-6-card-3-text {
+    font-size: 1.15rem;
   }
 }
 
@@ -543,5 +628,24 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+  }
+
+  .grid-card-6-card-1 {
+    width: 100%;
+  }
+  .grid-card-6-card-1-text {
+  }
+  .grid-card-6-card-1-title {
+    font-size: 0.5rem;
+  }
+
+  .grid-card-6-card-2-text {
+  }
+  .grid-card-6-card-2-title {
+  }
+
+  .grid-card-6-card-3-text {
+  }
+  .grid-card-6-card-3-title {
   }
 }
