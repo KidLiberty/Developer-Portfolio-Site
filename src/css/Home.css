@@ -19,6 +19,8 @@
 .home__landing-header {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  text-align: center;
   font-weight: bold;
   font-size: 3.75rem;
   z-index: 1;
@@ -609,7 +611,7 @@
 
 @media (max-width: 450px) and (min-width: 300px) {
   .home__landing-header {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   .home__cards-grid-container {
