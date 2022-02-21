@@ -155,6 +155,7 @@
     rgb(255, 140, 9),
     rgb(255, 0, 0)
   );
+  color: #ff8c09;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -605,7 +606,7 @@
 
 @media (max-width: 450px) and (min-width: 300px) {
   .home__landing-header {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .home__cards-grid-container {
