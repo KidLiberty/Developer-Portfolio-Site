@@ -5,19 +5,7 @@ export default function Footer() {
     <div className='footer-container'>
       <div className='footer-items-container'>
         <div>
-          <div className='footer-item'>Test</div>
-          <div className='footer-item'>Test</div>
-        </div>
-        <div>
-          <div className='footer-item'>Test</div>
-          <div className='footer-item'>Test</div>
-        </div>
-        <div>
-          <div className='footer-item'>Test</div>
-          <div className='footer-item'>Test</div>
-        </div>
-        <div>
-          <div className='footer-item'>Test</div>
+          <div className='footer-item'></div>
           <div className='footer-item'>Test</div>
         </div>
       </div>
