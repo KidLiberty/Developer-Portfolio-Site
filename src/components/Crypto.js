@@ -4,7 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import Navbar from './Navbar'
-import Coin from './Coin'
+import CoinMarket from './CoinMarket'
 import NFTGallery from './NFTGallery'
 
 const URL =
@@ -186,7 +186,7 @@ export default function Crypto() {
             />
           </div>
           {filteredCoins.map(coin => {
-            return <Coin key={coin.id} coin={coin} />
+            return <CoinMarket key={coin.id} coin={coin} />
           })}
         </div>
         <div className='crypto__NFT-gallery-container'>
