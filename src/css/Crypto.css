@@ -1,10 +1,11 @@
 .crypto__container {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .crypto__title-component {
@@ -19,6 +20,16 @@
   background-size: cover;
   background-position-x: 40%;
   background-position-y: center;
+}
+
+.crypto__coin-market-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
 }
 
 .title-text-container-1 {
@@ -271,6 +282,20 @@
   font-weight: bolder;
   padding-bottom: 20px;
   padding-right: 25px;
+}
+
+.market-header {
+  display: inline-block;
+  color: white;
+  background-color: rgb(57, 57, 243);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.coin-search-bar {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
 }
 
 .crypto__NFT-gallery-container {

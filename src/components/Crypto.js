@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -19,7 +19,10 @@ export default function Crypto() {
   useEffect(() => {
     fetch(URL)
       .then(res => res.json())
-      .then(data => setCoins(data))
+      .then(data => {
+        setCoins(data)
+        console.log(data)
+      })
       .catch(err => console.log(err))
   }, [])
 
@@ -38,6 +41,14 @@ export default function Crypto() {
   function handleChange(e) {
     setSearch(e.target.value)
   }
+
+  const filteredCoins = useMemo(
+    () =>
+      coins.filter(coin =>
+        coin.name.toLowerCase().includes(search.toLowerCase())
+      ),
+    [coins, search]
+  )
 
   return (
     <>
@@ -165,12 +176,18 @@ export default function Crypto() {
             <div className='crypto__main-content-card-3-title'>Ecosystem</div>
           </div>
         </div>
-        <div className='crypto__Coin-container'>
-          <input
-            type='text'
-            placeholder='Search'
-            onChange={e => handleChange(e)}
-          />
+        <div className='crypto__coin-market-container'>
+          <h1 className='market-header'>Current Market Metrics</h1>
+          <div className='coin-search-bar'>
+            <input
+              type='text'
+              placeholder='Search'
+              onChange={e => handleChange(e)}
+            />
+          </div>
+          {filteredCoins.map(coin => {
+            return <Coin key={coin.id} coin={coin} />
+          })}
         </div>
         <div className='crypto__NFT-gallery-container'>
           <NFTGallery />
