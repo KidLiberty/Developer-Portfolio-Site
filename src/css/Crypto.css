@@ -348,11 +348,11 @@
   }
 
   .crypto__main-content-card-1-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .crypto__main-content-card-1-text {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .crypto__main-content-card-2 {
@@ -362,11 +362,11 @@
   }
 
   .crypto__main-content-card-2-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .crypto__main-content-card-2-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .crypto__main-content-card-3 {
@@ -380,6 +380,6 @@
   }
 
   .crypto__main-content-card-3-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }

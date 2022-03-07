@@ -4,11 +4,24 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import Navbar from './Navbar'
+import Coin from './Coin'
 import NFTGallery from './NFTGallery'
+
+const URL =
+  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
 
 export default function Crypto() {
   const [offsetY, setOffsetY] = useState(0)
+  const [coins, setCoins] = useState([])
+  const [search, setSearch] = useState('')
   const handleScrollY = () => setOffsetY(window.scrollY)
+
+  useEffect(() => {
+    fetch(URL)
+      .then(res => res.json())
+      .then(data => setCoins(data))
+      .catch(err => console.log(err))
+  }, [])
 
   useEffect(() => {
     Aos.init({ duration: 2000 })
@@ -21,6 +34,10 @@ export default function Crypto() {
       window.removeEventListener('scroll', handleScrollY)
     }
   }, [])
+
+  function handleChange(e) {
+    setSearch(e.target.value)
+  }
 
   return (
     <>
@@ -147,6 +164,13 @@ export default function Crypto() {
             </div>
             <div className='crypto__main-content-card-3-title'>Ecosystem</div>
           </div>
+        </div>
+        <div className='crypto__Coin-container'>
+          <input
+            type='text'
+            placeholder='Search'
+            onChange={e => handleChange(e)}
+          />
         </div>
         <div className='crypto__NFT-gallery-container'>
           <NFTGallery />
