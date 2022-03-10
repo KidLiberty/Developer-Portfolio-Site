@@ -19,11 +19,8 @@ export default function Crypto() {
   useEffect(() => {
     fetch(URL)
       .then(res => res.json())
-      .then(data => {
-        setCoins(data)
-        console.log(data)
-      })
-      .catch(err => console.log(err))
+      .then(data => setCoins(data))
+      .catch(error => console.log(error))
   }, [])
 
   useEffect(() => {
@@ -42,13 +39,11 @@ export default function Crypto() {
     setSearch(e.target.value)
   }
 
-  const filteredCoins = useMemo(
-    () =>
-      coins.filter(coin =>
-        coin.name.toLowerCase().includes(search.toLowerCase())
-      ),
-    [coins, search]
-  )
+  const filteredCoins = useMemo(() => {
+    return coins.filter(coin =>
+      coin.name.toLowerCase().includes(search.toLowerCase())
+    )
+  }, [coins, search])
 
   return (
     <>
