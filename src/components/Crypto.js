@@ -39,11 +39,13 @@ export default function Crypto() {
     setSearch(e.target.value)
   }
 
-  const filteredCoins = useMemo(() => {
-    return coins.filter(coin =>
-      coin.name.toLowerCase().includes(search.toLowerCase())
-    )
-  }, [coins, search])
+  const filteredCoins = useMemo(
+    () =>
+      coins.filter(coin =>
+        coin.name.toLowerCase().includes(search.toLowerCase())
+      ),
+    [coins, search]
+  )
 
   return (
     <>

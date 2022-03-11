@@ -61,23 +61,24 @@ export default function NFTGallery() {
           data-aos='fade-left'
           data-aos-once='true'
           onClick={() => {
+            setGallery(
+              [
+                ...gallery,
+                {
+                  id: id,
+                  photoNumber: photoNumber,
+                  image: (
+                    <img
+                      src={require(`../images/samo_${photoNumber}.png`)}
+                      alt='Samo Pic'
+                    />
+                  )
+                }
+              ].sort((a, b) => {
+                return b.id - a.id
+              })
+            )
             setPhotoNumber(getRandomInt(1, 5))
-            const sort = [
-              ...gallery,
-              {
-                id: id,
-                photoNumber: photoNumber,
-                image: (
-                  <img
-                    src={require(`../images/samo_${photoNumber}.png`)}
-                    alt='Samo Pic'
-                  />
-                )
-              }
-            ].sort((a, b) => {
-              return b.id - a.id
-            })
-            setGallery(sort)
             setId(id + 1)
           }}
         >
