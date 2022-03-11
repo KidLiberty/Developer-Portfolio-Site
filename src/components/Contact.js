@@ -11,8 +11,8 @@ export default function Contact() {
       <div className='contact__container'>
         <FontAwesomeIcon icon='fa-brands fa-discord' />
         <div className='contact__email-container'>
-          The best way to reach be is via email:
-          <h2>brandonrstone@gmail.com</h2>
+          The best way to reach me is via email:
+          <h3>brandonrstone@gmail.com</h3>
         </div>
         <div className='contact__discord-container'>Test</div>
       </div>
