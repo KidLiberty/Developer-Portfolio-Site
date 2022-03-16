@@ -20,7 +20,7 @@ export default function Crypto() {
     fetch(URL)
       .then(res => res.json())
       .then(data => setCoins(data))
-      .catch(error => console.log(error))
+      .catch(err => console.log(err))
   }, [])
 
   useEffect(() => {
